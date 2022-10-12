@@ -1,0 +1,172 @@
+\documentclass{exam}
+
+\usepackage[margin=1.5cm, tmargin=0.8cm]{geometry}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{derivative}
+\usepackage[fleqn]{amsmath}
+
+\setlength{\columnsep}{1.5cm}
+
+\newcommand{\emptygraph}{
+    \begin{center}
+    \begin{tikzpicture}[scale=2.5]
+        \draw[>=latex, <->] (1, 0) -- (1, 2);
+        \draw[>=latex, <->] (0, 1) -- (2, 1);
+    \end{tikzpicture}
+    \end{center}
+}
+
+\begin{document}
+
+\vspace{5mm}
+
+\makebox[0.50\textwidth]{Name: \hrulefill}
+
+\vspace{5mm}
+
+\makebox[0.20\textwidth]{Period: \hrulefill}
+
+\vspace{5mm}
+
+\footnotesize \textbf{Disclaimer}: This is an attempt to replicate a perfect quiz for fun and potentially studying. All questions (besides the graphs and memorized derivatives) are original. Any questions resembling or the same as ones found on a legitimate test are coincidence. Produced and typeset by Rushil Surti :)
+
+\normalsize
+
+\section*{Derivatives Perfect Quiz (Form \#%(form)s)}
+
+\begin{center}
+    \fbox{\fbox{\parbox{5.5in}{\centering
+        Answer all questions to the best of your ability in the 15 minutes given. Graph with labels. \textbf{All answers must be given in most simplified, factored form.}
+    }}}
+\end{center}
+
+\begin{questions}
+    \begin{multicols}{2}
+    \question Graph the function \( y = \sin{x} \)
+    
+    \emptygraph
+
+    \question Graph the function \( y = \cos{x} \)
+
+    \emptygraph
+    \end{multicols}
+    
+    \begin{multicols}{2}
+    \question Graph the function \( y = \dfrac{1}{x} \)
+    
+    \emptygraph
+    
+    \question Graph the function \( y = \dfrac{1}{x^2} \)
+    
+    \emptygraph
+    \end{multicols}
+    
+    \begin{multicols}{2}
+    \question Graph the function \( y = \dfrac{\sin{x}}{x} \)
+    
+    \emptygraph
+    
+    \question Graph the function \( y = \ln{x} \)
+    
+    \emptygraph
+    
+    \end{multicols}
+    
+    \begin{multicols}{2}
+    \question Graph the function \( y = \tan^{-1}{x} \)
+    
+    \emptygraph
+    
+    \question Graph the function \( y = \left\lvert x \right\rvert \)
+    
+    \emptygraph
+    \end{multicols}
+    
+    \question Graph the function \( y = \left\lfloor x \right\rfloor \)
+    
+    \emptygraph
+
+    \begin{multicols}{2}
+
+    \question
+    \[ \odv{}{x} \left( \sin{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \cos{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \tan{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \csc{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \sec{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \cot{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \sin^{-1}{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \cos^{-1}{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \tan^{-1}{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \csc^{-1}{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \sec^{-1}{x} \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \cot^{-1}{x} \right) = \]
+    \end{multicols}
+
+    \begin{multicols}{2}
+    \question
+    \[ \odv{}{x} \left( e^x \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \ln{x} \right) = \]
+
+    \end{multicols}
+
+    \begin{multicols}{2}
+    \question
+    \[ \odv{}{x} \left( a^x \right) = \]
+
+    \question
+    \[ \odv{}{x} \left( \log_{a}{x} \right) = \]
+
+    \end{multicols}
+
+    \begin{multicols*}{2}
+    
+    \question Find the derivative of \( y = %(def_equation)s \) using the definition.
+    \vspace{\stretch{1}}
+    
+    \question Find the derivative of \( y = %(alt_equation)s \)  at \( x = %(alt_x)s \) using the alternative definition.
+    \vspace{\stretch{1}}
+    
+    \question Find the derivative of \( y = %(sdq_equation)s \) at \( x = %(sdq_x)s \) using the symmetric difference quotient.
+
+    \vfill\null\columnbreak
+
+    \question Find the derivative of \( y = %(prod_equation)s \)
+    \vspace{\stretch{1}}
+
+    \question Find the derivative of \( y = %(quot_equation)s \)
+    \vspace{\stretch{1}}
+
+    \question Find the derivative of \( y = %(logdiff_equation)s \)
+    \vspace{\stretch{1}}
+    
+    \end{multicols*}
+
+\end{questions}
+
+\end{document}
